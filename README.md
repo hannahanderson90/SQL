@@ -1,2 +1,3 @@
-# SQL
- SQL Portfolio
+# Hannah Anderson's SQL Portfolio
+
+## Welcome to my SQL portfolio! This code repository contains examples of SQL I've written. Feel free to take a look and reach out if you have any questions: hannah.kat2990@gmail.com
