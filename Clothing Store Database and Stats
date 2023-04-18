@@ -1,0 +1,26 @@
+--Create a clothing store database
+
+CREATE TABLE simplysouthern (id INTEGER PRIMARY KEY, item TEXT, color TEXT, section TEXT, quantity INTEGER, sale TEXT, price INTEGER);
+
+INSERT INTO simplysouthern VALUES(1,"blouse","white","womens",12,"no",20);
+INSERT INTO simplysouthern VALUES(2,"dress","blue","womens",4,"yes",18);
+INSERT INTO simplysouthern VALUES(3,"shirt","green","womens",6,"no",12);
+INSERT INTO simplysouthern VALUES(4,"shirt","purple","womens",5,"no",12);
+INSERT INTO simplysouthern VALUES(5,"shirt","pink","womens",5,"no",12);
+INSERT INTO simplysouthern VALUES(6,"shirt","yellow","womens",6,"no",12);
+INSERT INTO simplysouthern VALUES(7,"polo","green","mens",6,"no",30);
+INSERT INTO simplysouthern VALUES(8,"polo","red","mens",7,"no",30);
+INSERT INTO simplysouthern VALUES(9,"polo","black","mens",6,"no",30);
+INSERT INTO simplysouthern VALUES(10,"shorts","red","mens",7,"yes",20);
+INSERT INTO simplysouthern VALUES(11,"shorts","ten","mens",4,"yes",20);
+INSERT INTO simplysouthern VALUES(12,"shorts","red","boys",7,"yes",10);
+INSERT INTO simplysouthern VALUES(13,"shorts","red","boys",5,"yes",10);
+INSERT INTO simplysouthern VALUES(14,"shirt","red","boys",4,"no",15);
+INSERT INTO simplysouthern VALUES(15,"shirt","blue","boys",7,"no",15);
+
+--display the database ordered by price. 
+SELECT * FROM simplysouthern ORDER BY price desc;
+
+--what is the total sum of items in the store?
+SELECT SUM (quantity) FROM simplysouthern;
+
